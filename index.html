@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gurleen Kaur — Website Designer & Developer creating modern, responsive websites and e-commerce experiences." />
+    <meta name="theme-color" content="#0b1120" />
+    <title>Gurleen Kaur | Website Designer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+    <div class="noise"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top site-nav">
+      <div class="container">
+        <a class="navbar-brand brand" href="#home">Gurleen <span>Kaur</span><i>.</i></a>
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme"><i class="fa-solid fa-sun"></i></button>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#responsibilities">Responsibilities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item">
+              <a class="nav-link nav-contact" href="#contact">Let's Talk <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+      <div class="offcanvas-header">
+        <a class="brand" href="#home">G<span>K</span><i>.</i></a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav gap-2">
+          <li><a class="nav-link" href="#home" data-bs-dismiss="offcanvas">Home</a></li>
+          <li><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a></li>
+          <li><a class="nav-link" href="#experience" data-bs-dismiss="offcanvas">Experience</a></li>
+          <li><a class="nav-link" href="#responsibilities" data-bs-dismiss="offcanvas">Responsibilities</a></li>
+          <li><a class="nav-link" href="#skills" data-bs-dismiss="offcanvas">Skills</a></li>
+          <li><a class="nav-link" href="#tools" data-bs-dismiss="offcanvas">Tools</a></li>
+          <li><a class="nav-link" href="#projects" data-bs-dismiss="offcanvas">Projects</a></li>
+          <li><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero section-pad" id="home">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 hero-copy reveal">
+              <div class="eyebrow"><span class="eyebrow-dot"></span> AVAILABLE FOR CREATIVE OPPORTUNITIES</div>
+              <p class="hero-intro">Hello, I'm</p>
+              <h1>Gurleen <span>Kaur</span><b class="hero-period">.</b></h1>
+              <div class="hero-role">Website Designer <span>&</span> Developer</div>
+              <p class="hero-description">I create modern, responsive and engaging websites that bring brands to life through thoughtful design and seamless user experiences.</p>
+              <div class="hero-actions">
+                <a href="#projects" class="btn-primary-custom">Explore My Work <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#contact" class="btn-outline-custom">Let's Connect <i class="fa-regular fa-paper-plane"></i></a>
+              </div>
+              <div class="hero-meta">
+                <span><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</span>
+                <span class="meta-divider"></span>
+                <span><i class="fa-solid fa-code"></i> Design. Develop. Deliver.</span>
+              </div>
+            </div>
+            <div class="col-lg-5 reveal">
+              <div class="hero-visual">
+                <div class="orbit orbit-a"></div>
+                <div class="orbit orbit-b"></div>
+                <div class="hero-glow"></div>
+                <div class="profile-card tilt-card">
+                  <div class="profile-card-top"><span></span><span></span><span></span><small>gurleen-portfolio</small></div>
+                  <div class="profile-monogram">G<span>K</span></div>
+                  <div class="profile-card-bottom">
+                    <span>CREATIVE MIND</span><strong>Building for the web<span>.</span></strong>
+                  </div>
+                </div>
+                <div class="float-chip chip-html"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                <div class="float-chip chip-css"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                <div class="float-chip chip-js"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                <div class="float-chip chip-figma"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+                <div class="hero-spark spark-one"></div>
+                <div class="hero-spark spark-two"></div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+        </div>
+      </section>
+
+      <section class="section-pad section-border" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">A LITTLE INTRODUCTION</span>
+            <h2>About <span>Me</span></h2>
+            <p>Creative thinking meets thoughtful web experiences.</p>
+          </div>
+          <div class="row align-items-stretch g-4">
+            <div class="col-lg-4 reveal">
+              <div class="about-identity glass-card tilt-card h-100">
+                <div class="about-avatar">GK<span>✦</span></div>
+                <h3>Gurleen Kaur</h3>
+                <p>Website Designer & Developer</p>
+                <div class="identity-line"><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</div>
+                <div class="identity-line"><i class="fa-regular fa-envelope"></i> kaur.gurleen.6810@gmail.com</div>
+              </div>
+            </div>
+            <div class="col-lg-8 reveal">
+              <div class="about-content glass-card h-100">
+                <span class="mini-label">WHO I AM</span>
+                <h3>I turn ideas into <span>digital experiences.</span></h3>
+                <p>I am Gurleen Kaur, a Website Designer and Developer passionate about creating stylish, modern, and responsive websites. I specialize in website layouts, e-commerce platforms, UI/UX design, and engaging digital experiences.</p>
+                <p>With hands-on industry experience, I enjoy transforming ideas into functional websites that combine attractive visuals, user-friendly interfaces, and smooth functionality.</p>
+                <div class="about-tags"><span>Website Design</span><span>Frontend Development</span><span>UI/UX</span><span>E-commerce</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">WHERE I'VE GROWN</span>
+            <h2>My <span>Experience</span></h2>
+            <p>Learning, creating, and building better digital experiences.</p>
+          </div>
+          <div class="experience-layout">
+            <div class="experience-list">
+              <article class="experience-card glass-card reveal tilt-card">
+                <div class="exp-number">01</div>
+                <div class="exp-main">
+                  <h3>Trainee – Website Designer</h3>
+                  <div class="exp-company">Ansh Infotech <span>· Ludhiana</span></div>
+                  <p>Completed a one-year traineeship focused on website design and development. Collaborated with the design team to create clean, contemporary web layouts and user interfaces. Gained practical skills in UI/UX principles, visual design, and front-end implementation.</p>
+                </div>
+                <div class="exp-date">2022 — 2023</div>
+              </article>
+              <article class="experience-card glass-card reveal tilt-card">
+                <div class="exp-number">02</div>
+                <div class="exp-main">
+                  <h3>Graphic & Website Designer</h3>
+                  <div class="exp-company">IT Company <span>· Ludhiana</span></div>
+                  <p>Designing and developing stylish, modern, and responsive websites and online stores for clients. Creating engaging interfaces and meaningful interactions to enhance user experience and brand presence. Working on complete web design projects, including UI/UX and visual design.</p>
+                </div>
+                <div class="exp-date">2023 — Present</div>
+              </article>
+            </div>
+            <aside class="experience-aside glass-card reveal">
+              <div class="aside-mark">“</div>
+              <h3>Good design is more than how it looks.</h3>
+              <p>It's how clearly it communicates, how naturally it works, and how confidently people use it.</p>
+              <div class="aside-rule"></div>
+              <span>MY DESIGN APPROACH</span>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-border" id="responsibilities">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">WHAT I BRING TO THE TABLE</span>
+            <h2>Key <span>Responsibilities</span></h2>
+            <p>The work behind every thoughtful digital experience.</p>
+          </div>
+          <div class="row g-3 responsibility-grid">
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="responsibility-card glass-card tilt-card">
+                <div class="icon-3d">
+                  <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <h3>Website Design</h3>
+                <p>Designing modern, clean, and visually appealing website layouts aligned with brand identity.</p>
+                <span class="card-index">01 / DESIGN</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="responsibility-card glass-card tilt-card">
+                <div class="icon-3d">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3>Responsive Development</h3>
+                <p>Building responsive websites for desktop, tablet, and mobile with consistent layouts.</p>
+                <span class="card-index">02 / BUILD</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="responsibility-card glass-card tilt-card">
+                <div class="icon-3d">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Creating intuitive navigation and user-friendly interfaces that make websites easy to use.</p>
+                <span class="card-index">03 / EXPERIENCE</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="responsibility-card glass-card tilt-card">
+                <div class="icon-3d">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <h3>E-commerce Websites</h3>
+                <p>Designing online stores with clear product layouts and smooth shopping experiences.</p>
+                <span class="card-index">04 / COMMERCE</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="responsibility-card glass-card tilt-card">
+                <div class="icon-3d">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>Turning design concepts into interactive pages using HTML, CSS, JavaScript, and Bootstrap.</p>
+                <span class="card-index">05 / FRONTEND</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="responsibility-card glass-card tilt-card">
+                <div class="icon-3d">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <h3>Website Maintenance</h3>
+                <p>Updating website content, refining layouts, and resolving visual or responsive issues.</p>
+                <span class="card-index">06 / SUPPORT</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="responsibility-card glass-card tilt-card">
+                <div class="icon-3d">
+                  <i class="fa-solid fa-display"></i>
+                </div>
+                <h3>Browser Compatibility</h3>
+                <p>Checking website presentation and functionality across modern browsers and devices.</p>
+                <span class="card-index">07 / QUALITY</span>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-3 reveal">
+              <article class="responsibility-card glass-card tilt-card">
+                <div class="icon-3d">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3>Visual Consistency</h3>
+                <p>Applying typography, colors, imagery, and visual details to maintain a cohesive identity.</p>
+                <span class="card-index">08 / VISUALS</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="section-pad" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">MY CAPABILITIES</span>
+            <h2>Skills & <span>Expertise</span></h2>
+            <p>The skills I use to shape ideas into websites.</p>
+          </div>
+          <div class="skills-wrap reveal">
+            <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-pill"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</div>
+            <div class="skill-pill"><i class="fa-solid fa-mobile-screen"></i> Responsive Web Design</div>
+            <div class="skill-pill"><i class="fa-solid fa-code"></i> Website Development</div>
+            <div class="skill-pill"><i class="fa-solid fa-object-group"></i> UI/UX Design</div>
+            <div class="skill-pill"><i class="fa-solid fa-store"></i> E-commerce Design</div>
+            <div class="skill-pill secondary-skill"><i class="fa-solid fa-bezier-curve"></i> Visual Design</div>
+            <div class="skill-pill secondary-skill"><i class="fa-solid fa-pen-nib"></i> Graphic Design</div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="py-20 position-relative">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">CAPABILITIES</span>
+            <h2>My <span>Expertise</span></h2>
+            <p>Skills That Bring Web Ideas to Life</p>
+          </div>
+          <!-- Web Development Skills First -->
+          <div class="row g-4">
+            <!-- HTML5 -->
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="glass-card p-4 rounded-4 text-center space-y-3 group hover:border-brand-blue/50 h-100">
+                <div class="mx-auto rounded-4 d-flex align-items-center justify-content-center fs-3 group-hover transition-transform" style="width: 56px; height: 56px">
+                  <i class="p-3 mb-4 mt-3 rounded-2 shadow fa-brands fa-html5" style="color: rgb(251 146 60); background-color: rgb(251 146 60 / .1);"></i>
+                </div>
+                <h4 class="fw-bold mt-3 text-white fs-6">HTML5</h4>
+                <p class="m-0 small text-text-secondary">Semantic Web Structure</p>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="glass-card p-4 rounded-4 text-center space-y-3 group hover:border-brand-blue/50 h-100">
+                <div class="mx-auto rounded-4 d-flex align-items-center justify-content-center fs-3 group-hover transition-transform" style="width: 56px; height: 56px">
+                  <i class="p-3 mb-4 mt-3 rounded-2 shadow fa-brands fa-css3-alt" style="color: rgb(96 165 250); background-color: rgb(96 165 250 / .1);"></i>
+                </div>
+                <h4 class="fw-bold mt-3 text-white fs-6">CSS3</h4>
+                <p class="m-0 small text-text-secondary">Modern Styling & 3D</p>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="glass-card p-4 rounded-4 text-center space-y-3 group hover:border-brand-blue/50 h-100">
+                <div class="mx-auto rounded-4 d-flex align-items-center justify-content-center fs-3 group-hover transition-transform" style="width: 56px; height: 56px">
+                  <i class="p-3 mb-4 mt-3 rounded-2 shadow fa-brands fa-js" style="color: rgb(250 197 21); background-color: rgb(250 197 21 / .1);;"></i>
+                </div>
+                <h4 class="fw-bold mt-3 text-white fs-6">JavaScript</h4>
+                <p class="m-0 small text-text-secondary">Interactive Features</p>
+              </div>
+            </div>
+
+            <!-- Bootstrap 5 -->
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="glass-card p-4 rounded-4 text-center space-y-3 group hover:border-brand-blue/50 h-100">
+                <div class="mx-auto rounded-4 d-flex align-items-center justify-content-center fs-3 group-hover transition-transform" style="width: 56px; height: 56px">
+                  <i class="p-3 mb-4 mt-3 rounded-2 shadow fa-brands fa-bootstrap" style="color: rgb(129 140 248); background-color: rgb(129 140 248 / .1);;"></i>
+                </div>
+                <h4 class="fw-bold mt-3 text-white fs-6">Bootstrap 5</h4>
+                <p class="m-0 small text-text-secondary">Responsive Grids</p>
+              </div>
+            </div>
+
+            <!-- Responsive Design -->
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="glass-card p-4 rounded-4 text-center space-y-3 group hover:border-brand-blue/50 h-100">
+                <div class="mx-auto rounded-4 bg-brand-cyan/10 text-brand-cyan d-flex align-items-center justify-content-center fs-3 group-hover transition-transform" style="width: 56px; height: 56px">
+                  <i class="p-3 mb-4 mt-3 rounded-2 shadow fa-solid fa-mobile-screen-button" style="color: rgb(20 216 245); background-color: rgb(20 216 245 / .1);;"></i>
+                </div>
+                <h4 class="fw-bold mt-3 text-white fs-6">Responsive Design</h4>
+                <p class="m-0 small text-text-secondary">Mobile-First Layouts</p>
+              </div>
+            </div>
+
+            <!-- Website Development -->
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="glass-card p-4 rounded-4 text-center space-y-3 group hover:border-brand-blue/50 h-100">
+                <div class="mx-auto rounded-4 bg-brand-electric/10 text-brand-electric d-flex align-items-center justify-content-center fs-3 group-hover transition-transform" style="width: 56px; height: 56px">
+                  <i class="p-3 mb-4 mt-3 rounded-2 shadow fa-solid fa-laptop-code" style="color: rgb(22 139 255); background-color: rgb(22 139 255 / .1);;"></i>
+                </div>
+                <h4 class="fw-bold mt-3 text-white fs-6">Website Development</h4>
+                <p class="m-0 small text-text-secondary">Full Web Interfaces</p>
+              </div>
+            </div>
+
+            <!-- UI/UX Design -->
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="glass-card p-4 rounded-4 text-center space-y-3 group hover:border-brand-blue/50 h-100">
+                <div class="mx-auto rounded-4 d-flex align-items-center justify-content-center fs-3 group-hover transition-transform" style="width: 56px; height: 56px">
+                  <i class="p-3 mb-4 mt-3 rounded-2 shadow fa-solid fa-compass-drafting" style="color: rgb(192 132 252); background-color: rgb(192 132 252 / .1);;"></i>
+                </div>
+                <h4 class="fw-bold mt-3 text-white fs-6">UI/UX Design</h4>
+                <p class="m-0 small text-text-secondary">User Centric Flow</p>
+              </div>
+            </div>
+
+            <!-- E-Commerce Design -->
+            <div class="col-6 col-sm-4 col-lg-3">
+              <div class="glass-card p-4 rounded-4 text-center space-y-3 group hover:border-brand-blue/50 h-100">
+                <div class="mx-auto rounded-4 d-flex align-items-center justify-content-center fs-3 group-hover transition-transform" style="width: 56px; height: 56px">
+                  <i class="p-3 mb-4 mt-3 rounded-2 shadow fa-solid fa-cart-shopping" style="color: rgb(52 211 153 / 1); background-color: rgb(52 211 153 / .1);"></i>
+                </div>
+                <h4 class="fw-bold mt-3 text-white fs-6">E-Commerce Design</h4>
+                <p class="m-0 small text-text-secondary">Online Store Fronts</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Supporting Skills Header -->
+          <div class="mt-5 text-center">
+            <span class="small text-uppercase fw-semibold text-slate-400" style="letter-spacing: 2px">Supporting Visual Skills</span>
+          </div>
+
+          <!-- Supporting Skills -->
+          <div class="row g-4 mt-2 justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="glass-card p-3 rounded-4 text-center d-flex align-items-center justify-content-center gap-3 h-100">
+                <i class="fa-solid fa-palette text-brand-cyan"></i>
+                <span class="small fw-semibold text-white">Visual Design</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="glass-card p-3 rounded-4 text-center d-flex align-items-center justify-content-center gap-3 h-100">
+                <i class="fa-solid fa-bezier-curve text-brand-blue"></i>
+                <span class="small fw-semibold text-white">Graphic Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-pad section-border" id="tools">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">MY DIGITAL TOOLKIT</span>
+            <h2>Tools & <span>Technologies</span></h2>
+            <p>The tools I use to design, develop, and refine.</p>
+          </div>
+          <div class="tool-grid reveal">
+            <div class="tool-item">
+              <div class="tool-orb html"><i class="fa-brands fa-html5"></i></div>
+              <span>HTML5</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb css"><i class="fa-brands fa-css3-alt"></i></div>
+              <span>CSS3</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb js"><i class="fa-brands fa-js"></i></div>
+              <span>JavaScript</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb bootstrap"><i class="fa-brands fa-bootstrap"></i></div>
+              <span>Bootstrap</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb php"><i class="fa-brands fa-php"></i></div>
+              <span>Php</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb database"><i class="fa-solid fa-database"></i></div>
+              <span>MySql</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb figma"><i class="fa-brands fa-figma"></i></div>
+              <span>Figma</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb photoshop"><b>Ps</b></div>
+              <span>Photoshop</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb illustrator"><b>Ai</b></div>
+              <span>Illustrator</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb corel"><b> C </b></div>
+              <span>CorelDRAW</span>
+            </div>
+            <div class="tool-item">
+              <div class="tool-orb canva"><b>Canva</b></div>
+              <span>Canva</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">A FEW THINGS I'VE WORKED ON</span>
+            <h2>Selected <span>Projects</span></h2>
+            <p>A glimpse of website and digital design work.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-wide glass-card reveal tilt-card">
+              <div class="project-art art-one">
+                <img src="projects/superfixfasteners.png" class="w-100" />
+              </div>
+              <div class="project-info">
+                <div>
+                  <span class="project-category text-uppercase">Manufacturing Website</span>
+                  <h3>Superfix Fasteners</h3>
+                  <p>A clean, modern web presence for a growing brand.</p>
+                </div>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+            <article class="project-card project-wide glass-card reveal tilt-card">
+              <div class="project-art art-one">
+                <img src="projects/technoservices.png" class="w-100" />
+              </div>
+              <div class="project-info">
+                <div>
+                  <span class="project-category text-uppercase">Manufacturing WEBSITE</span>
+                  <h3>Techno Services</h3>
+                  <p>A clean, modern web presence for a growing brand.</p>
+                </div>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+            <article class="project-card project-wide glass-card reveal tilt-card">
+              <div class="project-art art-one">
+                <img src="projects/aristoindia.png" class="w-100" />
+              </div>
+              <div class="project-info">
+                <div>
+                  <span class="project-category text-uppercase">Manufacturing WEBSITE</span>
+                  <h3>Aristoinda</h3>
+                  <p>A clean, modern web presence for a growing brand.</p>
+                </div>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+            <article class="project-card project-wide glass-card reveal tilt-card">
+              <div class="project-art art-one">
+                <img src="projects/pooja-enterprises.png" class="w-100" />
+              </div>
+              <div class="project-info">
+                <div>
+                  <span class="project-category text-uppercase">Textile WEBSITE</span>
+                  <h3>Pooja Enterprises</h3>
+                  <p>A clean, modern web presence for a growing brand.</p>
+                </div>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+            <article class="project-card project-wide glass-card reveal tilt-card">
+              <div class="project-art art-one">
+                <img src="projects/malwaedu.png" class="w-100" />
+              </div>
+              <div class="project-info">
+                <div>
+                  <span class="project-category text-uppercase">College WEBSITE</span>
+                  <h3>Malwa Central College of Education for Women</h3>
+                  <p>A clean, modern web presence for a growing brand.</p>
+                </div>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+            <article class="project-card project-wide glass-card reveal tilt-card">
+              <div class="project-art art-one">
+                <img src="projects/devsamaj.png" class="w-100" />
+              </div>
+              <div class="project-info">
+                <div>
+                  <span class="project-category text-uppercase">College WEBSITE</span>
+                  <h3>Dev Samaj College of Education for Women</h3>
+                  <p>A clean, modern web presence for a growing brand.</p>
+                </div>
+                <span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-border" id="education">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">MY LEARNING JOURNEY</span>
+            <h2>Education & <span>Certification</span></h2>
+            <p>The foundation behind my professional journey.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-7 reveal">
+              <div class="subsection-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+              <div class="education-card glass-card">
+                <span class="edu-year">2021</span>
+                <h3>Bachelor of Computer Applications</h3>
+                <p>Ramgarhia Girls College, Ludhiana, Punjab</p>
+                <small>Panjab University</small>
+              </div>
+              <div class="education-card glass-card">
+                <span class="edu-year">2016</span>
+                <h3>Higher Education – Commerce</h3>
+                <p>Dashmesh Senior Secondary School, Ludhiana</p>
+                <small>PSEB</small>
+              </div>
+            </div>
+            <div class="col-lg-5 reveal">
+              <div class="subsection-title"><i class="fa-solid fa-award"></i> Certification</div>
+              <div class="education-card certification-card glass-card">
+                <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                <span class="edu-year">2021</span>
+                <h3>Full Stack Developer</h3>
+                <p>Ansh Infotech, Ludhiana</p>
+              </div>
+              <div class="subsection-title language-heading"><i class="fa-solid fa-language"></i> Languages</div>
+              <div class="language-list"><span>English</span><span>Hindi</span><span>Punjabi</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad contact-section" id="contact">
+        <div class="container">
+          <div class="contact-panel glass-card reveal">
+            <div class="contact-orb"></div>
+            <div class="row align-items-center g-5 position-relative">
+              <div class="col-lg-6">
+                <span class="section-kicker">HAVE A PROJECT IN MIND?</span>
+                <h2>Let's create something <span>meaningful.</span></h2>
+                <p>Have a website project or collaboration in mind? I'd love to hear about it.</p>
+                <div class="contact-details">
+                  <a href="mailto:kaur.gurleen.6810@gmail.com"><i class="fa-regular fa-envelope"></i> kaur.gurleen.6810@gmail.com</a>
+                  <a href="tel:+919781976810"><i class="fa-solid fa-phone"></i> +91-97819-76810</a>
+                  <span><i class="fa-solid fa-location-dot"></i> Ludhiana, Punjab, India</span>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <form id="contactForm" class="contact-form">
+                  <div class="row g-3">
+                    <div class="col-md-6"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required /></div>
+                    <div class="col-md-6"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required /></div>
+                    <div class="col-12"><label for="subject">Subject</label><input id="subject" name="subject" type="text" placeholder="What would you like to discuss?" required /></div>
+                    <div class="col-12"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about your project..." required></textarea></div>
+                    <div class="col-12">
+                      <button class="btn-primary-custom w-100" type="submit">Prepare Email <i class="fa-regular fa-paper-plane"></i></button><small class="form-note" id="formNote">Your email app will open with your message ready to send.</small>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <a class="brand" href="#home">Gurleen <span>Kaur</span><i>.</i></a>
+        <p>© <span id="year"></span> Gurleen Kaur 2023</p>
+        <a class="back-top" href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
