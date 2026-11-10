@@ -116,3 +116,30 @@ document.querySelectorAll('.project-art').forEach(project => {
         img.style.top = '0px';
     });
 });
+
+// Hide section IDs from the browser address bar
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (event) {
+    const targetId = this.getAttribute('href');
+
+    if (!targetId || targetId === '#') return;
+
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      event.preventDefault();
+
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  });
+});
+
+// Remove hash if it already exists when page loads
+if (window.location.hash) {
+  history.replaceState(null, '', window.location.pathname + window.location.search);
+}
