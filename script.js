@@ -67,20 +67,35 @@ if (window.matchMedia('(pointer:fine)').matches && !reduceMotion) {
 
 // Static-site contact form: opens the visitor's email app with a pre-filled message.
 // No backend, database, or automatic email sending is used.
-document.getElementById('contactForm').addEventListener('submit', event => {
-  event.preventDefault();
-  const form = event.currentTarget;
-  if (!form.reportValidity()) return;
+document.getElementById('contactForm').addEventListener('submit', function(event) {
 
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const subject = document.getElementById('subject').value.trim();
-  const message = document.getElementById('message').value.trim();
+    event.preventDefault();
 
-  const bodyText = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-  const mailto = `mailto:kaur.gurleen.6810@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
-  document.getElementById('formNote').textContent = 'Opening your email app…';
-  window.location.href = mailto;
+    const form = this;
+
+    if (!form.reportValidity()) return;
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    const body = `Name: ${name}
+Email: ${email}
+
+Message:
+${message}`;
+
+    const gmailURL = 'https://mail.google.com/mail/?view=cm&fs=1' +
+        '&to=' + encodeURIComponent('kaur.gurleen.6810@gmail.com') +
+        '&su=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+
+    window.open(gmailURL, '_blank');
+
+    document.getElementById('formNote').textContent =
+        'Gmail opened. Please click Send to submit your message.';
+
 });
 
 // Close mobile navigation after selecting a link (Bootstrap also handles data-bs-dismiss)
