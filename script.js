@@ -158,3 +158,66 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 if (window.location.hash) {
   history.replaceState(null, '', window.location.pathname + window.location.search);
 }
+
+const projectImages = document.querySelectorAll('.project-art img');
+
+const lightbox = document.getElementById('projectLightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const counter = document.getElementById('lightboxCounter');
+
+const closeBtn = document.querySelector('.lightbox-close');
+const prevBtn = document.querySelector('.lightbox-prev');
+const nextBtn = document.querySelector('.lightbox-next');
+
+let currentIndex = 0;
+
+function showImage(index) {
+  currentIndex = (index + projectImages.length) % projectImages.length;
+
+  lightboxImage.src = projectImages[currentIndex].src;
+  lightboxImage.alt = projectImages[currentIndex].alt || 'Project Preview';
+
+  counter.textContent = `${currentIndex + 1} / ${projectImages.length}`;
+}
+
+function openLightbox(index) {
+  showImage(index);
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+projectImages.forEach((img, index) => {
+  img.addEventListener('click', () => {
+    openLightbox(index);
+  });
+});
+
+nextBtn.addEventListener('click', () => {
+  showImage(currentIndex + 1);
+});
+
+prevBtn.addEventListener('click', () => {
+  showImage(currentIndex - 1);
+});
+
+closeBtn.addEventListener('click', closeLightbox);
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    closeLightbox();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('active')) return;
+
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') showImage(currentIndex + 1);
+  if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+});
+
