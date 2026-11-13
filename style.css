@@ -1789,3 +1789,102 @@ body.light-theme .mock-hero {
     -o-transition: all 5s;
     transition: all 5s;
 }
+
+/* Full Size Scrollable Project Lightbox */
+.project-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.95);
+
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 60px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.project-lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Large Website Screenshot */
+.project-lightbox img {
+  display: block;
+  width: min(85vw, 1100px) !important;
+  max-width: none !important;
+  max-height: none !important;
+  height: auto;
+
+  object-fit: contain;
+  border-radius: 8px;
+
+  margin: 0 auto;
+  transform: none !important;
+}
+
+/* Close Button */
+.lightbox-close {
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  z-index: 100001;
+}
+
+/* Previous / Next */
+.lightbox-prev,
+.lightbox-next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100001;
+}
+
+.lightbox-prev {
+  left: 25px;
+}
+
+.lightbox-next {
+  right: 25px;
+}
+
+/* Image Counter */
+.lightbox-counter {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100001;
+  color: white;
+  background: rgba(0,0,0,0.7);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .project-lightbox {
+    padding: 70px 10px;
+  }
+
+  .project-lightbox img {
+    width: 96vw !important;
+  }
+
+  .lightbox-close {
+    top: 12px;
+    right: 12px;
+  }
+
+  .lightbox-prev {
+    left: 8px;
+  }
+
+  .lightbox-next {
+    right: 8px;
+  }
+}
